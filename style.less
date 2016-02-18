@@ -1,0 +1,195 @@
+body, html {
+	overflow: visible;
+	display: flex;
+	width: 100%;
+}
+
+* {
+	border-radius: 0 !important;
+}
+
+#toggle {
+	display: none;
+}
+
+@media screen {
+	#toggle {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	body.border_visable {
+		height: 420mm;
+		width: 100%;
+	}
+}
+
+body, h1, h2, h3, h4, h5 {
+	font-family: '微软雅黑';
+}
+
+div {
+	font-family: '微软雅黑 Light';
+}
+
+#main {
+	position: relative;
+	display: flex;
+	height: 297mm;
+	width: 210mm;
+	margin: 0;
+	
+	@media screen {
+		body.border_visable & {
+			margin: auto;
+			border: 1px black solid;
+			box-shadow: 1mm 1.5mm 0 black;
+		}
+	}
+	padding: 10px;
+	> #left, #right {
+		display: flex;
+		flex-direction: column;
+		padding: 2px 10px;
+		position: relative;
+	}
+	
+	> .background1 {
+		position: absolute;
+		top: 12px;
+		left: 196px;
+		font-size: 80px;
+		color: red;
+		opacity: 0.3;
+		font-family: Tahoma;
+	}
+}
+
+#left {
+	width: 38.19660113%;
+	border-right: 1px solid black;
+	#footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		.phone {
+			font-size: 24px;
+		}
+		.mail {
+			font-size: 14px;
+		}
+		> * {
+			margin: 5px 3px;
+			> * {
+				vertical-align: middle;
+			}
+			> i {
+				font-size: larger;
+			}
+		}
+	}
+}
+
+#right {
+	width: 61.80339887%;
+	.super {
+		text-align: center;
+		margin-bottom: 0.7em;
+	}
+}
+
+section {
+	margin: 0.8em 0 0 0;
+	h3, h4, h5 {
+		color: #8e9193;
+		margin: 0 0 4px 0;
+	}
+}
+
+.tips {
+	li {
+		display: inline-block;
+		line-height: 1.6;
+		font-size: 22px;
+	}
+}
+
+.alert.tiny {
+	padding: 5px 12px;
+	margin-bottom: 5px;
+}
+
+#skills {
+	table-layout: fixed;
+	td:nth-of-type(odd) {
+		width: 6em;
+		text-align: right;
+		font-weight: bold;
+	}
+}
+
+#coding {
+	td:first-child {
+		text-align: right;
+		font-weight: bold;
+	}
+	td:nth-child(2) {
+		width: 3.1em;
+	}
+}
+
+table.blue {
+	width: 100%;
+	
+	td, th {
+		padding: 0cm 5.4pt 0cm 5.4pt;
+	}
+	th {
+		border: solid #4472C4 1.0pt;
+		border-left: none;
+		background: #4472C4;
+		padding: 0cm 5.4pt 0cm 5.4pt;
+	}
+	
+	tr:not(:first-child) td {
+		border-top: none;
+	}
+	td {
+		&:not(:first-child) {
+			border-left: none;
+		}
+		border: solid #8EAADB 1.0pt;
+	}
+	tr:nth-of-type(odd) {
+		background: #D9E2F3;
+	}
+}
+
+.spacer1 {
+	height: 126px;
+}
+
+.history_continue {
+	font-style: italic;
+}
+
+#history {
+	flex-direction: column;
+	
+	article {
+		&:first-child {
+			border-top: 1px #bdbdbd dashed;
+		}
+		border-bottom: 1px #bdbdbd dashed;
+		padding-top: 9px;
+	}
+	
+	header {
+		font-family: '微软雅黑';
+		font-size: 20px;
+	}
+	
+}
