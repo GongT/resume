@@ -12,7 +12,15 @@
 </head>
 
 <body>
-<div id="toggle" class="btn btn-primary" onclick="document.body.classList.toggle('border_visable')">边框开关</div>
+<script type="text/javascript">
+	if( /github\.io|coding\.io/.test(location.href) ){
+		toggle();
+	}
+	function toggle(){
+		document.body.classList.toggle('border_visable')
+	}
+</script>
+<div id="toggle" class="btn btn-primary" onclick="toggle();">边框开关</div>
 <div id="main">
 	<div class="background1">
 		?&gt;
