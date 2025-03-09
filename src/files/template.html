@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<title>宋仁博 简历</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<slot name="global-style" />
+	</head>
+	<body>
+		<div id="header">
+			<style>
+				@scope {
+					& {
+						position: relative;
+					}
+					.background {
+						position: absolute;
+						top: 50px;
+						left: 0px;
+						width: 100%;
+						bottom: 20px;
+						background-color: var(--primary-color);
+						z-index: -1;
+						background-image: url("assets/1.png");
+						background-size: cover;
+					}
+				}
+			</style>
+			<slot name="hero" />
+			<div class="background"></div>
+		</div>
+		<div class="body">
+			<div class="summary">
+				<slot name="summary" />
+			</div>
+			<div class="detail">
+				<slot name="detail" />
+			</div>
+			<div class="experience">
+				<slot name="experience" />
+			</div>
+			<div class="projects">
+				<slot name="projects" />
+			</div>
+		</div>
+	</body>
+</html>
