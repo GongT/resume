@@ -1,0 +1,9 @@
+{
+	"extends": "@build-script/single-dog-asset/package/tsconfig.json",
+	"compilerOptions": {
+		"lib": ["ESNext", "DOM"],
+		"outDir": "../lib",
+		"skipLibCheck": true,
+		"jsx": "react-jsx"
+	}
+}

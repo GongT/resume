@@ -1,0 +1,12 @@
+{
+	"extends": "@build-script/single-dog-asset/package/tsconfig.json",
+	"compilerOptions": {
+		"target": "ESNext",
+		// "module": "NodeNext",
+		// "moduleResolution": "NodeNext",
+		"outDir": "../lib",
+		"typeRoots": ["../node_modules/@types", "../node_modules"],
+		"types": ["node"],
+		"lib": ["ESNext"]
+	}
+}
