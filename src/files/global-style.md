@@ -73,7 +73,7 @@ section {
 			padding: 0;
 		}
 	}
-	&:nth-child(even) {
+	&:nth-child(odd) {
 		background-color: var(--background-color);
 	}
 }
